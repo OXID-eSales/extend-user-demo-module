@@ -11,31 +11,33 @@
 /**
  * Metadata version
  */
-$sMetadataVersion = '2.0';
+$sMetadataVersion = '2.1';
 
 /**
  * Module information
  */
-$aModule = array(
-    'id'           => 'extenduser',
-    'title'        => 'Extend user',
-    'description'  => array(
-        'de' => 'Extends user.',
-        'en' => 'Extends user.',
-    ),
-    'version'      => '1.0.0',
-    'author'       => 'OXID eSales AG',
-    'url'          => 'http://www.oxid-esales.com',
-    'email'        => 'mantas.vaitkunas@oxid-esales.com',
-    'extend'       => array(
+$aModule = [
+    'id' => 'oeextenduser',
+    'title' => [
+        'de' => 'OXID Benutzerformularerweiterung Beispiel',
+        'en' => 'OXID User Form Extension Example',
+    ],
+    'description' => [
+        'de' => 'Beispielmodule, um die Erweiterung eines Benutzerformulars zu demonstrieren.',
+        'en' => 'Example module to demonstrate how to extend a user form.',
+    ],
+    'version' => '2.0.0',
+    'author' => 'OXID eSales AG',
+    'url' => 'http://www.oxid-esales.com',
+    'email' => 'info@oxid-esales.com',
+    'extend' => [
         \OxidEsales\Eshop\Application\Model\User\UserUpdatableFields::class => \OxidEsales\ExtendUser\UserUpdatableFields::class
-    ),
-    'events'       => array(
+    ],
+    'events' => [
         'onActivate'   => \OxidEsales\ExtendUser\ModuleEvents::class.'::onActivate',
         'onDeactivate' => \OxidEsales\ExtendUser\ModuleEvents::class.'::onDeactivate'
-    ),
+    ],
     'blocks' => array(
         array('template' => 'form/fieldset/user_billing.tpl', 'block'=>'form_user_billing_country', 'file'=>'/views/user.tpl'),
     ),
-    'settings' => []
-);
+];
