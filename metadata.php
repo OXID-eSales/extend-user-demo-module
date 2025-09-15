@@ -31,11 +31,11 @@ $aModule = [
     'url' => 'http://www.oxid-esales.com',
     'email' => 'info@oxid-esales.com',
     'extend' => [
-        \OxidEsales\Eshop\Application\Model\User\UserUpdatableFields::class => \OxidEsales\ExtendUser\UserUpdatableFields::class
+        \OxidEsales\Eshop\Application\Model\User\UserUpdatableFields::class => \OxidEsales\ExtendUser\Model\UserUpdatableFields::class
     ],
     'events' => [
-        'onActivate'   => \OxidEsales\ExtendUser\ModuleEvents::class.'::onActivate',
-        'onDeactivate' => \OxidEsales\ExtendUser\ModuleEvents::class.'::onDeactivate'
+        'onActivate' => \OxidEsales\ExtendUser\Core\ModuleEvents::class.'::onActivate',
+        'onDeactivate' => \OxidEsales\ExtendUser\Core\ModuleEvents::class.'::onDeactivate'
     ],
     'blocks' => array(
         array('template' => 'form/fieldset/user_billing.tpl', 'block'=>'form_user_billing_country', 'file'=>'/views/user.tpl'),

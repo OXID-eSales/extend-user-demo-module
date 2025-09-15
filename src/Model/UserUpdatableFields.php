@@ -8,7 +8,7 @@
  * @copyright (C) OXID e-Sales, 2003-2017
  */
 
-namespace OxidEsales\ExtendUser;
+namespace OxidEsales\ExtendUser\Model;
 
 /**
  * @see \OxidEsales\Eshop\Application\Model\User\UserUpdatableFields

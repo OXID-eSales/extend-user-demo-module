@@ -8,7 +8,7 @@
  * @copyright (C) OXID e-Sales, 2003-2017
  */
 
-namespace OxidEsales\ExtendUser;
+namespace OxidEsales\ExtendUser\Core;
 
 use oxDb;
 

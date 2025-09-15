@@ -8,12 +8,12 @@
  * @copyright (C) OXID e-Sales, 2003-2017
  */
 
-namespace OxidEsales\ExtendUser;
+namespace OxidEsales\ExtendUser\Model;
 
 /**
  * Class contains user table information.
  */
 class UserModel
 {
-    const FIELD_ADDITIONAL_INFORMATION = 'EXTENDUSER_ADDITIONALCONTACTINFO';
+    const FIELD_ADDITIONAL_INFORMATION = 'OEEXTENDUSER_ADDITIONALCONTACTINFO';
 }
