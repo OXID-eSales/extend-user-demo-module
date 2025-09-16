@@ -25,6 +25,7 @@ $aModule = [
         'de' => 'Beispielmodule, um die Erweiterung eines Benutzerformulars zu demonstrieren.',
         'en' => 'Example module to demonstrate how to extend a user form.',
     ],
+    'thumbnail'   => 'pictures/logo.png',
     'version' => '2.0.0',
     'author' => 'OXID eSales AG',
     'url' => 'http://www.oxid-esales.com',
