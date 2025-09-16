@@ -34,7 +34,6 @@ $aModule = [
         \OxidEsales\Eshop\Application\Model\User\UserUpdatableFields::class => \OxidEsales\ExtendUser\Model\UserUpdatableFields::class
     ],
     'events' => [
-        'onActivate' => \OxidEsales\ExtendUser\Core\ModuleEvents::class.'::onActivate',
-        'onDeactivate' => \OxidEsales\ExtendUser\Core\ModuleEvents::class.'::onDeactivate'
+        'onActivate' => \OxidEsales\ExtendUser\Core\ModuleEvents::class.'::onActivate'
     ],
 ];
