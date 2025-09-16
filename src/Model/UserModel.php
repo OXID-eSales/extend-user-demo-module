@@ -1,12 +1,11 @@
 <?php
+
 /**
- * @package       extenduser
- * @category      module
- * @author        OXID eSales AG
- * @link          http://www.oxid-esales.com/en/
- * @licenses      GNU GENERAL PUBLIC LICENSE. More info can be found in LICENSE file.
- * @copyright (C) OXID e-Sales, 2003-2017
+ * Copyright © . All rights reserved.
+ * See LICENSE file for license details.
  */
+
+declare(strict_types=1);
 
 namespace OxidEsales\ExtendUser\Model;
 
