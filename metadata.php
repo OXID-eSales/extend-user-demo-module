@@ -37,7 +37,4 @@ $aModule = [
         'onActivate' => \OxidEsales\ExtendUser\Core\ModuleEvents::class.'::onActivate',
         'onDeactivate' => \OxidEsales\ExtendUser\Core\ModuleEvents::class.'::onDeactivate'
     ],
-    'blocks' => array(
-        array('template' => 'form/fieldset/user_billing.tpl', 'block'=>'form_user_billing_country', 'file'=>'/views/user.tpl'),
-    ),
 ];

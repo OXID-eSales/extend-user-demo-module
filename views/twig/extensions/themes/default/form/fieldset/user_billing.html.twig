@@ -1,0 +1,26 @@
+{% extends 'form/fieldset/user_billing.html.twig' %}
+
+{% block form_user_billing_country %}
+
+name: {{ invadr.oxuser__oxfname }}
+
+    <div class="row gx-2">
+        <div class="col-md-12 mb-3 px-1">
+            <div class="form-floating">
+                <input
+                    class="form-control"
+                    placeholder=" "
+                    type="text"
+                    maxlength="255"
+                    id="invadr[oxuser__oeextenduser_additionalcontactinfo]"
+                    name="invadr[oxuser__oeextenduser_additionalcontactinfo]"
+                    value="{% if invadr.oxuser__oeextenduser_additionalcontactinfo is defined %}{{ invadr.oxuser__oeextenduser_additionalcontactinfo }}{% else %}{{ oxcmp_user.oxuser__oeextenduser_additionalcontactinfo.value }}{% endif %}"
+                >
+                <label for="invadr[oxuser__oeextenduser_additionalcontactinfo]">Additional User Info</label>
+            </div>
+        </div>
+    </div>
+
+    {{ parent() }}
+
+{% endblock %}
