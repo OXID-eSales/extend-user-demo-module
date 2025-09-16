@@ -17,9 +17,9 @@ final class Version20250916123033 extends AbstractMigration
 
         $user = $schema->getTable('oxuser');
 
-        if (!$user->hasColumn('OEEXTENDUSER_ADDITIONALCONTACTINFO')) {
+        if (!$user->hasColumn('OE_EXTENDUSERFORM_FLOOR')) {
             $user->addColumn(
-                'OEEXTENDUSER_ADDITIONALCONTACTINFO',
+                'OE_EXTENDUSERFORM_FLOOR',
                 Types::STRING,
                 ['columnDefinition' => 'varchar(255)']
             );

@@ -12,7 +12,7 @@ namespace OxidEsales\ExtendUser\Model;
 class UserUpdatableFields extends UserUpdatableFields_parent
 {
     protected $fieldsToAdd = [
-        'OEEXTENDUSER_ADDITIONALCONTACTINFO',
+        'OE_EXTENDUSERFORM_FLOOR',
     ];
 
     /**

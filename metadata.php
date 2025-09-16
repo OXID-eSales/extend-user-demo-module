@@ -16,9 +16,9 @@ $sMetadataVersion = '2.1';
  * Module information
  */
 $aModule = [
-    'id' => 'oeextenduser',
+    'id' => 'oe_extenduserform',
     'title' => [
-        'de' => 'OXID Benutzerformularerweiterung Beispiel',
+        'de' => 'OXID Benutzerformular-Erweiterungsbeispiel',
         'en' => 'OXID User Form Extension Example',
     ],
     'description' => [
