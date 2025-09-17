@@ -1,14 +1,12 @@
 # OXID User Form Extension Example
 
-This module is an example to demonstrate how to extend a user form in OXID eShop.
+This module is an example to demonstrate how to extend a user form in OXID eShop. It adds an additional input field to the billing address form.
 
-The corresponding tutorial can be found in our [official documentation](https://docs.oxid-esales.com/developer/en/latest/development/modules_components_themes/module/tutorials/frontend_user_forms.html).
+Please see our tutorial [Extending a Frontend User Form](https://docs.oxid-esales.com/developer/en/latest/development/modules_components_themes/module/tutorials/frontend_user_forms.html) in the official OXID eShop documentation for more information.
 
-Installation
-------------
+## Installation
 
 In shop's root directory, run the following commands:
-
 
 ``` shell
 composer config repositories.oe_extenduserform vcs https://github.com/OXID-eSales/extend-user-demo-module.git
