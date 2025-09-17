@@ -4,6 +4,11 @@ This module is an example to demonstrate how to extend a user form in OXID eShop
 
 Please see our tutorial [Extending a Frontend User Form](https://docs.oxid-esales.com/developer/en/latest/development/modules_components_themes/module/tutorials/frontend_user_forms.html) in the official OXID eShop documentation for more information.
 
+## Branch Compatibility
+
+- b-7.x branch / v2.x version - compatible with OXID eShop compilation 7.x
+- b-6.x branch / v1.x version - compatible with OXID eShop compilation 6.x
+
 ## Installation
 
 In shop's root directory, run the following commands:
