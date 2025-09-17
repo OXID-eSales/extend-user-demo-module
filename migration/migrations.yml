@@ -1,0 +1,4 @@
+table_storage:
+  table_name: oxmigrations_oe_extenduserform
+migrations_paths:
+  'OxidEsales\ExtendUser\Migrations': data

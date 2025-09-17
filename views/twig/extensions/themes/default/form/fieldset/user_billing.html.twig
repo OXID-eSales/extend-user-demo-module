@@ -1,0 +1,24 @@
+{% extends 'form/fieldset/user_billing.html.twig' %}
+
+{% block form_user_billing_country %}
+
+    <div class="row gx-2">
+        <div class="col-md-12 mb-3 px-1">
+            <div class="form-floating">
+                <input
+                    class="form-control"
+                    placeholder=" "
+                    type="text"
+                    maxlength="255"
+                    id="invadr[oxuser__oe_extenduserform_floor]"
+                    name="invadr[oxuser__oe_extenduserform_floor]"
+                    value="{% if invadr.oxuser__oe_extenduserform_floor is defined %}{{ invadr.oxuser__oe_extenduserform_floor }}{% else %}{{ oxcmp_user.oxuser__oe_extenduserform_floor.value }}{% endif %}"
+                >
+                <label for="invadr[oxuser__oe_extenduserform_floor]">Floor Number</label>
+            </div>
+        </div>
+    </div>
+
+    {{ parent() }}
+
+{% endblock %}

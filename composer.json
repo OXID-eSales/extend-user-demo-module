@@ -1,6 +1,6 @@
 {
   "name": "oxid-esales/extend-user-demo-module",
-  "description": "This module purpose is to show how to extend OXID eShop updatable fields functionality.",
+  "description": "Example module to demonstrate how to extend a user form.",
   "type": "oxideshop-module",
   "keywords": ["oxid", "modules", "eShop"],
   "homepage": "https://www.oxid-esales.com/en/home.html",
@@ -9,12 +9,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "OxidEsales\\ExtendUser\\": "../../../source/modules/oe/extenduser"
-    }
-  },
-  "extra": {
-    "oxideshop": {
-      "target-directory": "oe/extenduser"
+      "OxidEsales\\ExtendUser\\": "src/"
     }
   }
 }

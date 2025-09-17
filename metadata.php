@@ -1,41 +1,36 @@
 <?php
+
 /**
- * @package       extenduser
- * @category      module
- * @author        OXID eSales AG
- * @link          http://www.oxid-esales.com/en/
- * @licenses      GNU GENERAL PUBLIC LICENSE. More info can be found in LICENSE file.
- * @copyright (C) OXID e-Sales, 2003-2017
+ * Copyright © . All rights reserved.
+ * See LICENSE file for license details.
  */
+
+declare(strict_types=1);
 
 /**
  * Metadata version
  */
-$sMetadataVersion = '2.0';
+$sMetadataVersion = '2.1';
 
 /**
  * Module information
  */
-$aModule = array(
-    'id'           => 'extenduser',
-    'title'        => 'Extend user',
-    'description'  => array(
-        'de' => 'Extends user.',
-        'en' => 'Extends user.',
-    ),
-    'version'      => '1.0.0',
-    'author'       => 'OXID eSales AG',
-    'url'          => 'http://www.oxid-esales.com',
-    'email'        => 'mantas.vaitkunas@oxid-esales.com',
-    'extend'       => array(
-        \OxidEsales\Eshop\Application\Model\User\UserUpdatableFields::class => \OxidEsales\ExtendUser\UserUpdatableFields::class
-    ),
-    'events'       => array(
-        'onActivate'   => \OxidEsales\ExtendUser\ModuleEvents::class.'::onActivate',
-        'onDeactivate' => \OxidEsales\ExtendUser\ModuleEvents::class.'::onDeactivate'
-    ),
-    'blocks' => array(
-        array('template' => 'form/fieldset/user_billing.tpl', 'block'=>'form_user_billing_country', 'file'=>'/views/user.tpl'),
-    ),
-    'settings' => []
-);
+$aModule = [
+    'id' => 'oe_extenduserform',
+    'title' => [
+        'de' => 'OXID Benutzerformular-Erweiterungsbeispiel',
+        'en' => 'OXID User Form Extension Example',
+    ],
+    'description' => [
+        'de' => 'Beispielmodule, um die Erweiterung eines Benutzerformulars zu demonstrieren.',
+        'en' => 'Example module to demonstrate how to extend a user form.',
+    ],
+    'thumbnail'   => 'pictures/logo.png',
+    'version' => '2.0.0',
+    'author' => 'OXID eSales AG',
+    'url' => 'http://www.oxid-esales.com',
+    'email' => 'info@oxid-esales.com',
+    'extend' => [
+        \OxidEsales\Eshop\Application\Model\User\UserUpdatableFields::class => \OxidEsales\ExtendUser\Model\UserUpdatableFields::class,
+    ],
+];
