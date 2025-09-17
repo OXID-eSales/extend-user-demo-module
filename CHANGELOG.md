@@ -14,10 +14,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Simplified class structure.
 - Moved activation event to migrations.
-- Changed generic input field to floor number input field.
+- Generic input field to floor number input field.
 
 ### Removed
-- Removed deactivation event completely.
+- Deactivation event.
+- Outdated tests. No new tests added for now.
 
 ## [v1.0.0] - 2017-03-07
 
